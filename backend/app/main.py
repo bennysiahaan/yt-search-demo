@@ -18,6 +18,8 @@ def load_model():
         model = SentenceTransformer(model_name)
         model.save(model_path)
         print("Successful.")
+    
+    return model
 
 def run(app: FastAPI, model: SentenceTransformer):
 
